@@ -1,3 +1,4 @@
+<%@page import="java.text.SimpleDateFormat"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8" import="dao.*, model.*, java.util.ArrayList, java.text.DecimalFormat"%>
 <!DOCTYPE html>
@@ -35,12 +36,13 @@
                 	if(dsgd != null && dsgd.size() > 0) {
                 		int stt = 1;
                 		DecimalFormat formatter = new DecimalFormat("#,###");
+                		SimpleDateFormat outputFormat = new SimpleDateFormat("dd/MM/yyyy");
                 		for(TKGiaodich682 tkgd: dsgd) {
                 %>
                 <tr>
 					<td><%=stt++%></td>
 					<td><%=String.format("GD%03d", tkgd.getId())%></td>
-					<td><%=tkgd.getNgaygiaodich()%></td>
+					<td><%=outputFormat.format(tkgd.getNgaygiaodich())%></td>
 					<td><%=tkgd.getSove()%></td>
 					<td><%=formatter.format(tkgd.getTongtien())%> đồng</td>
 				</tr>
