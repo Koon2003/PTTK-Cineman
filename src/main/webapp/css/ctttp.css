@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+* {
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	background-color: #f2f2f2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin: 20px;
+}
+
+.movie-details {
+	width: 1000px;
+	background-color: #fff;
+	margin: 0 auto;
+	padding: 30px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-details h1 {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.movie-details p {
+	font-size: 20px;
+	margin: 20px 0;
+}
+
+.back-button {
+	margin: 0 auto; /* Căn giữa theo chiều ngang */
+    display: block; /* Đảm bảo nút là phần tử khối */
+	padding: 10px;
+	width: 125px;
+	text-align: center;
+	background-color: #007BFF;
+	font-size: 20px;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	font-size: 16px;
+	margin-top: 40px;
+	cursor: pointer;
+}
+
+.back-button:hover {
+	background-color: #0056b3;
+}
